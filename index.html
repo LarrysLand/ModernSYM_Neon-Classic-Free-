@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Overlay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Overlay -->
+  <div id="overlay" class="overlay">
+    <div class="overlay-content">
+      <h1>Welcome to My Portfolio</h1>
+      <p>
+        Explore a showcase of my work, connections, and achievements. Click below to dive in and discover more.
+      </p>
+      <button id="close-overlay" class="close-button">Enter Portfolio</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <section class="portfolio-section">
+    <img src="images/portrait-of--smiling-young-man-studio-shot.webp" alt="Portrait" class="portrait">
+    <h2 class="name">Name Here</h2>
+    <div class="linktree">
+      <div class="link-column">
+        <a href="https://twitter.com" target="_blank" class="link">Twitter</a>
+        <a href="https://instagram.com" target="_blank" class="link">Instagram</a>
+        <a href="https://facebook.com" target="_blank" class="link">Facebook</a>
+        <a href="https://linkedin.com" target="_blank" class="link">LinkedIn</a>
+      </div>
+      <div class="link-column">
+        <a href="https://unstoppabledomains.com" target="_blank" class="link">UnstoppableDomains.com</a>
+        <a href="https://web3compass.com" target="_blank" class="link">Web3Compass.com</a>
+        <a href="https://overthereality.ai" target="_blank" class="link">OverTheReality.ai</a>
+        <a href="https://www.tradingview.com/symbols/BTCUSD/" target="_blank" class="link">Bitcoin Chart</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2024 BlANK DESGN. All rights reserved.</p>
+</footer>
+
+
+  <!-- JavaScript -->
+  <script>
+    // Get the overlay and close button
+    const overlay = document.getElementById('overlay');
+    const closeOverlayButton = document.getElementById('close-overlay');
+
+    // Add an event listener to the "Enter Portfolio" button
+    closeOverlayButton.addEventListener('click', () => {
+      // Add the "hidden" class to hide the overlay
+      overlay.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
